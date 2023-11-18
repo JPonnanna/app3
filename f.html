@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Selection</title>
+  <style>
+    body {
+      background-color: #fff; /* White background */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Southem', cursive;
+    }
+
+    #language-container {
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Southem', cursive;
+    }
+
+    #englishButton {
+      background-color: #3498db; /* Blue color for English */
+      color: #fff; /* White text color */
+    }
+
+    #hindiButton {
+      background-color: #e74c3c; /* Red color for Hindi */
+      color: #fff; /* White text color */
+    }
+
+    #kannadaButton {
+      background-color: #27ae60; /* Green color for Kannada */
+      color: #fff; /* White text color */
+    }
+  </style>
+</head>
+<body>
+  <div id="language-container">
+    <h1>Choose Your Language</h1>
+    <button id="englishButton" onclick="redirectToEnglish()">English</button>
+    <button id="hindiButton" onclick="redirectToHindi()">Hindi</button>
+    <button id="kannadaButton" onclick="redirectToKannada()">Kannada</button>
+  </div>
+
+  <script>
+    function redirectToEnglish() {
+      window.location.href = 'feng1.html';
+    }
+
+    function redirectToHindi() {
+      window.location.href = 'fhin1.html';
+    }
+
+    function redirectToKannada() {
+      window.location.href = 'fkan1.html';
+    }
+  </script>
+</body>
+</html>
